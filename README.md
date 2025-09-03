@@ -31,15 +31,15 @@
     <tr>
       <td align="center">
         <img src="images/classic.png" alt="Θέμα 1" width="260"/><br/>
-        <sub>Κλασικό κόκκινο θέμα.</sub>
+        <sub> <a href="Classic Theme/">Classic Theme </a> </sub>
       </td>
       <td align="center">
         <img src="images/minimal.png" alt="Θέμα 2" width="260"/><br/>
-        <sub>Μινιμαλιστικό λευκό θέμα με καθαρή παρουσίαση.</sub>
+        <sub> <a href="Minimal Theme/">Minimal Theme </a> </sub>
       </td>
       <td align="center">
-        <img src="images/dynamic.png" alt="Θέμα 3" width="260"/><br/>
-        <sub>Θέμα με έντονη αντίθεση για μεγαλύτερη προβολή.</sub>
+        <img src="images/dynamic.png" alt="Θέμα 3" width="260"/><br/> 
+        <sub> <a href="Dynamic Theme/">Dynamic Theme </a> </sub>
       </td>
     </tr>
   </table>
