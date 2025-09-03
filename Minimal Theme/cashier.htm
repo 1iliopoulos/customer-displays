@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+
+  <style>
+    html, body { 
+      height: 100%; 
+    }
+
+    body {
+      margin: 0;
+      background: #EB2727;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #ffffff;
+    }
+
+    /* Fullscreen container */
+    .screen { position: absolute; top:0; right:0; bottom:0; left:0; }
+
+    /* 50/50 περιοχές */
+    .top {
+      position: absolute; top:0; left:0; right:0; height:50%;
+      background: #ffffff; color:#EB2727;
+    }
+    .bottom {
+      position: absolute; bottom:0; left:0; right:0; height:50%;
+      background: #EB2727; color:#ffffff;
+    }
+
+    /* Logo στο πάνω μισό, κεντραρισμένο οριζόντια */
+    .logo {
+      position: absolute; top: 10px; left: 0; right: 0;
+      text-align: center;
+    }
+    .logo img {
+      height: 140px; /* προσαρμόστε αν θέλετε */
+      width: auto;
+    }
+
+    .center-wrap { 
+      display: table; 
+      width: 100%; 
+      height: 100%; 
+    }
+
+    .center-cell {
+      display: table-cell; 
+      vertical-align: middle; 
+      text-align: center; 
+    }
+
+    .line {
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 1.1;
+      white-space: normal;       /* επιτρέπει αναδίπλωση */
+      word-wrap: break-word;     /* κόβει αν χρειάζεται */
+    }
+
+    .total-label { 
+      font-weight: 800; 
+      font-size: 90px; 
+      line-height: 1.05; 
+    }
+
+    .total-value { 
+      margin-top: 12px; 
+      font-weight: 600; 
+      font-size: 56px; 
+      line-height: 1.1; 
+    }
+
+  </style>
+</head>
+<body>
+  <div class="screen">
+
+    <div class="top">
+      <div class="logo">
+        <img src="https://png.pngtree.com/png-vector/20230207/ourmid/pngtree-simple-minimal-logo-template-png-image_6590234.png">
+      </div>
+
+      <div class="center-wrap">
+        <div class="center-cell">
+          <div class="line">#DES &middot; #LIT &euro;</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="center-wrap">
+        <div class="center-cell">
+          <div class="total-label">TOTAL</div>
+          <div class="total-value">#TOT	&euro;</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

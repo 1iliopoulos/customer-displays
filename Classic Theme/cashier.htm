@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* ========== ΒΑΣΙΚΕΣ ΡΥΘΜΙΣΕΙΣ ========== */
+
+        /*
+         * Ορισμός χρώματος φόντου και βασικής γραμματοσειράς
+         */
+        html, body {
+            background-color: rgb(193, 0, 0);
+            font-family: Roboto, sans-serif;
+            margin: 0; /* Αφαιρούμε τυχόν default περιθώρια */
+            padding: 0; /* Αφαιρούμε τυχόν default περιθώρια */
+        }
+
+        /*
+         * Κοντέινερ λογοτύπου
+         * Τοποθετεί το logo σε απόλυτη θέση,
+         * περίπου στο επάνω-κεντρικό τμήμα της σελίδας
+         */
+        .logo-container {
+            margin: 0;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        /*
+         * Ρυθμίσεις εικόνας λογοτύπου
+         * Διατηρεί σταθερό ύψος, αυτόματο πλάτος
+         */
+        .logo-container img {
+            height: 150px;
+            width: auto;
+            display: block;
+        }
+
+        /*
+         * Κεντρικός κοντέινερ περιεχομένου
+         * Κεντράρει το "Total" και το ποσό (#TOT)
+         * στη μέση της οθόνης
+         */
+        .centered-content {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        /*
+         * Επικεφαλίδα (π.χ. "Total")
+         */
+        .heading-text {
+            color: white;
+            font-size: 30pt;
+            font-weight: 400;
+            margin: 0; /* Μηδενίζουμε τυχόν default περιθώρια */
+        }
+
+        /*
+         * Ποσό/Τιμή που θα εμφανιστεί (π.χ. #TOT)
+         */
+        .total-amount {
+            font-size: 70pt;
+            font-weight: 500;
+            color: white;
+            margin: 0; /* Μηδενίζουμε τυχόν default περιθώρια */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        Κοντέινερ Λογοτύπου 
+        (Τοποθετεί το logo στο επάνω κεντρικό τμήμα της σελίδας)
+    -->
+    <div class="logo-container">
+        <img src="https://i.ibb.co/LhJr1S6J/logo.png" alt="logo">
+    </div>
+
+    <!-- 
+        Κεντρικός κοντέινερ 
+        (Τοποθετεί στη μέση το κείμενο "Total" και την τιμή #TOT)
+    -->
+    <div class="centered-content">
+        <div class="heading-text">Total</div>
+        <br>
+        <div class="total-amount">#TOT</div>
+    </div>
+
+</body>
+</html>
