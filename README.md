@@ -41,6 +41,10 @@
         <img src="images/dynamic.png" alt="Θέμα 3" width="260"/><br/> 
         <sub> <a href="Dynamic Theme/">Dynamic Theme </a> </sub>
       </td>
+        <td align="center">
+        <img src="images/newdisplay.png" alt="Θέμα 4" width="260"/><br/> 
+        <sub> <a href="New Display/">New Display</a> </sub>
+      </td>
     </tr>
   </table>
 </p>
