@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #cfdbea; /* μπλε φόντο */
+      color: #506593;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative; /* για το ::before */
+      overflow: hidden;
+    }
+
+    /* Η εικόνα στο background με χαμηλή διαφάνεια */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 600px;   /* μπορείς να το αλλάξεις */
+      height: 600px;
+      background: url("https://i.ibb.co/Q7kDbvNT/Black.png") no-repeat center center;
+      background-size: contain; /* ή cover αν θες να γεμίζει */
+      opacity: 0.08;  /* πόσο "αχνή" φαίνεται */
+      transform: translate(-50%, -50%);
+      z-index: 0;
+      pointer-events: none; /* για να μην επηρεάζει click */
+    }
+
+    .product,
+    .line,
+    .total {
+      position: relative; /* να βγαίνουν πάνω από το ::before */
+      z-index: 1;
+    }
+
+    .product {
+      text-align: center;
+      font-size: 65px;
+      padding-top: 60px;
+      margin-top: 20px;
+    }
+
+    .line {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 60px;
+      font-size: 50px;
+    }
+
+    .line .center {
+      margin-top: 180px;
+    }
+
+    .total {
+      background: #C10000;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px;
+      font-size: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="product">#DES</div>
+
+    <div class="line">
+      <div class="center">#LIT &euro;</div>
+    </div>
+  </div>
+
+  <div class="total">
+    <div>Total</div>
+    <div>#TOT &euro;</div>
+  </div>
+</body>
+</html>
